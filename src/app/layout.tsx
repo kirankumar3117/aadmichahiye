@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import '../../styles/main.scss'
+import Head from 'next/head'
 
 
 export const metadata: Metadata = {
@@ -14,6 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+     
       <body className="main_layout">{children}</body>
     </html>
   )

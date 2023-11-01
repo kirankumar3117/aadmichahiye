@@ -6,7 +6,11 @@
   font-size: 16px;
   padding: 0.5rem 16px;
   border-radius: 5px;
+  background-color: transparent;
   @include littleani;
+  @include respond(tab-port){
+    min-height: 4rem;
+  }
   &:focus {
     border: 0.12rem solid #6366f1;
     background-color: #fff;
